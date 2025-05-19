@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+  <meta charset="UTF-8" />
+  <title>Validação de Formulário</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <h1>Formulario de Cadastro</h1>
-    <form>
-        <input type="text" placeholder="Nome completo"> <br>
-        <input type="text" placeholder="E-mail"> <br>
-        <input type="text" placeholder="Senha"> <br>
-        <input type="text" placeholder="Confirmar senha"> <br>
-        <input type="checkbox" id="checkbox-termos"> <label for="checkbox-termos">Aceito os termos de participação</label> <br>
-        <button type="submit">Cadastrar</button>
-    </form>
+
+  <form id="meuFormulario">
+    <label for="campoA">Campo A:</label>
+    <input type="number" id="campoA" name="campoA" required />
+    <br /><br />
+    <label for="campoB">Campo B:</label>
+    <input type="number" id="campoB" name="campoB" required />
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensagem"></div>
+
+  <script src="main.js"></script>
 </body>
 </html>
