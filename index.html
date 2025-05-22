@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Formulario de Cadastro</h1>
-    <form>
-        <input type="text" placeholder="Nome completo"> <br>
-        <input type="text" placeholder="E-mail"> <br>
-        <input type="text" placeholder="Senha"> <br>
-        <input type="text" placeholder="Confirmar senha"> <br>
-        <input type="checkbox" id="checkbox-termos"> <label for="checkbox-termos">Aceito os termos de participação</label> <br>
-        <button type="submit">Cadastrar</button>
+    <header>
+        <h1>Lista de tarefas</h1>
+        <button type="button">Nova tarefa +</button>
+    </header>
+
+    <form id="form-tarefa">
+        <h2>Inserir nova tarefa</h2>
+        <label for="nova-tarefa" class="sr-only">Nova tarefa</label>
+        <input type="text" id="nova-tarefa" required placeholder="Insira a tarefa" aria-label="Nova tarefa">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
     </form>
+
+    <ul id="lista-tarefas"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
