@@ -1,0 +1,14 @@
+.button-style(@bg-color, @text-color) {
+    display: block;
+    background-color: @bg-color;
+    color: @text-color;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: @product-button-radius;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken(@bg-color, 5%);
+    }
+}
